@@ -1,22 +1,34 @@
-<div id="game-view">
-    <div id="home-screen">
-        <h1 class="neon-title">SIZE_SHIFT</h1>
-        <p class="blink">W: LARGE | S: SMALL</p>
-        <button id="start-btn">INITIALIZE</button>
-    </div>
-
-    <div id="hud" class="hidden">
-        <div id="score-val">0000</div>
-        <div class="meter">
-            <span id="tag-0" class="active">SMALL</span>
-            <span id="tag-1">LARGE</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIZE_SHIFT | Lincoln Station</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-view">
+        <div id="home-screen">
+            <h1 class="neon-title">SIZE_SHIFT</h1>
+            <p class="blink">W: LARGE | S: SMALL</p>
+            <button id="start-btn">INITIALIZE</button>
         </div>
-        <div id="loc-display">LOC: LINCOLN, MA</div>
-    </div>
 
-    <div id="death-screen" class="hidden">
-        <h1 class="crash-text">SYSTEM_HALT</h1>
-        <p id="final-stats">SCORE: 0</p>
-        <button id="reboot-btn">REBOOT</button>
+        <div id="hud" class="hidden">
+            <div id="score-val">0000</div>
+            <div class="meter">
+                <span id="tag-0" class="active">SMALL</span>
+                <span id="tag-1">LARGE</span>
+            </div>
+            <div id="loc-display">LOC: LINCOLN, MA</div>
+        </div>
+
+        <div id="death-screen" class="hidden">
+            <h1 class="crash-text">SYSTEM_HALT</h1>
+            <p id="final-stats">SCORE: 0</p>
+            <button id="reboot-btn">REBOOT</button>
+        </div>
     </div>
-</div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
